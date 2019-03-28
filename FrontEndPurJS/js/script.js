@@ -1,5 +1,5 @@
 // Requête AJAX pour charger le json à l'adresse configurable ci-dessous:
-var url = 'http://localhost/BackEndPHP/';
+var url = 'http://localhost/formation/WebApp/BackEndPHP/';
 
 
 var xmlhttp = new XMLHttpRequest();
@@ -23,19 +23,14 @@ xmlhttp.onreadystatechange = function() {
                 var newColonne = document.createElement('div');
                 newColonne.setAttribute('class', "col");
 
-
                     // Nouvelle image
                     var newImgItem = document.createElement('img'); 
                     newImgItem.setAttribute('src', currentObject.imageURL);
                 
                     // Ajout de l'image dans la nouvelle colonne
                     newColonne.appendChild(newImgItem);
-               
-
 
                     // ********************
-
-
 
                     // Nouveau titre
                     var newTitleItem = document.createElement('h5');
@@ -45,9 +40,7 @@ xmlhttp.onreadystatechange = function() {
                     // Ajout du titre dans la nouvelle colonne
                     newColonne.appendChild(newTitleItem);
                 
-
                     // ********************
-
 
                     // Nouvelle catégorie
                     var newCategoryItem = document.createElement('span');
@@ -57,13 +50,8 @@ xmlhttp.onreadystatechange = function() {
                     // Ajout du titre dans la nouvelle colonne
                     newColonne.appendChild(newCategoryItem);
 
-
-
-
                 // Ajout de la colonne dans grid
                 grid.appendChild( newColonne );
-
-
             }
          }
     }
